@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(152, 219, 106);
+}
+
+h1 {
+    color: rgba(93, 145, 241, 0.808);
+    text-align: center;
+}
+
+p {
+    color: green;
+}
