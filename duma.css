@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #eefcff;
+    line-height: 1.7;
+}
+
+
+/* ================= HEADER ================= */
+
+.top-banner {
+    background: linear-gradient(90deg, #e8ffff, #dff8ff);
+    text-align: center;
+    padding: 15px;
+    color: #009f68;
+}
+
+.top-banner h3 {
+    font-size: 22px;
+}
+
+.header-main {
+    min-height: 85px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    padding: 10px 6%;
+    gap: 30px;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+.search-button,
+.menu-button {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    overflow: hidden;
+}
+
+section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+section h2 {
+    color: #075080;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+    background:
+        linear-gradient(
+            rgba(215, 249, 255, 0.85),
+            rgba(224, 255, 239, 0.9)
+        );
+    padding-top: 110px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #00b928;
+    text-shadow: 4px 4px 0 #111;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #064c78;
+    font-size: 32px;
+}
+
+.hero p {
+    max-width: 900px;
+    text-align: left;
+}
+
+.hero ul {
+    max-width: 900px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.hero li {
+    font-size: 20px;
+    margin: 15px 0;
+    padding-left: 10px;
+}
+
+.hero li::marker {
+    color: red;
+}
+
+.hero strong {
+    color: red;
+}
+
+.hero button,
+.website-templates button,
+.pricing button {
+    background: linear-gradient(90deg, #07506d, #00aeea);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 16px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hero button:hover,
+.website-templates button:hover,
+.pricing button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ================= GIỚI THIỆU ================= */
+
+.introduction {
+    background: linear-gradient(135deg, #f2ffff, #e5fff1);
+}
+
+.introduction > img {
+    width: min(700px, 100%);
+    margin: 30px auto;
+    display: block;
+    border-radius: 15px;
+}
+
+
+/* ================= BENEFITS ================= */
+
+.benefits {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.benefits article {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.benefits h3 {
+    color: #075080;
+    font-size: 24px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    background: #f8ffff;
+}
+
+.services > h3 {
+    color: #075080;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.service {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.service img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.service h2 {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.service p {
+    text-align: left;
+}
+
+
+/* ================= MẪU WEBSITE ================= */
+
+.website-templates {
+    background:
+        linear-gradient(
+            135deg,
+            #d9f8ff,
+            #eafff1
+        );
+}
+
+.website-templates img {
+    width: min(850px, 100%);
+    display: block;
+    margin: 35px auto;
+    border-radius: 20px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.features {
+    background: linear-gradient(135deg, #e8ffff, #eafff3);
+}
+
+.features details {
+    max-width: 950px;
+    margin: 18px auto;
+    background: white;
+    border-radius: 15px;
+    padding: 20px 30px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.features summary {
+    cursor: pointer;
+    color: #075080;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.features details p {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.features details img {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+
+/* ================= PRICING ================= */
+
+.pricing {
+    background: white;
+}
+
+.pricing article {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 230px;
+    margin: 15px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: #f3fbff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pricing article h3 {
+    color: #075080;
+    font-size: 24px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer h2 {
+    color: #00bfff;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .header-main {
+        justify-content: space-between;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .search-button {
+        margin-left: auto;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    section {
+        padding: 55px 20px;
+    }
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    section p,
+    .hero li {
+        font-size: 18px;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        padding: 15px;
+    }
+
+    .service h2 {
+        font-size: 26px;
+    }
+
+    .features summary {
+        font-size: 20px;
+    }
+
+    .pricing article {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+}
